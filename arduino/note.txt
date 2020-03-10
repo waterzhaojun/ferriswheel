@@ -1,0 +1,2 @@
+To install this script, we need a library file named encoder. go to http://www.arduino.cc/en/Guide/Libraries
+ to find related info.

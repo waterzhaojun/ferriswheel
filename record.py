@@ -12,6 +12,8 @@ matplotlib.use("TkAgg")
 from matplotlib import style
 style.use('ggplot')
 
+
+
 class App(tkinter.Tk):
     def __init__(self, window_title, video_source=0):
         tkinter.Tk.__init__(self)
@@ -24,6 +26,7 @@ class App(tkinter.Tk):
         # Create a canvas that can fit the above video source size
         self.canvas = tkinter.Canvas(self, width = self.vid.width, height = self.vid.height)
         self.canvas.grid(row=0, column=0)#.pack(side=tkinter.LEFT)
+        #self.datay = []
 
         # test plot canvus, by Jun
         f = plt.Figure(figsize=(self.vid.width/100,self.vid.height/100), dpi=100)
